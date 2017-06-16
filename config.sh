@@ -54,4 +54,6 @@ export TOOLROOT=$TISDKSYSTEMHOME/x86_64-arago-linux
 
 
 ---------------------------------------------------------------------------------
+#在开发板中编译qt
 
+./configure  -sysroot / -device AM5728  -device-option CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-  -shared -developer-build  -opengl es2 -nomake examples -nomake tests -opensource -confirm-license -qt-zlib -qt-libjpeg -qt-libpng -qt-freetype  -skip qtwebengine  -v
